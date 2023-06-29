@@ -46,6 +46,7 @@
 
 .nav {
   background-color: #FF7755;
+
 }
 
 .nav ul li {
@@ -101,19 +102,22 @@ li{
   gap: 4px;
   height: 100vh;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 0.5fr 1fr 5fr 0.5fr;
+  grid-template-rows: 10% 5% 50% 10%;
+  /* grid-template-rows: 0.5fr 0.5fr 5fr 0.5fr; */
 }
 
 .header{
   display: grid;
   grid-column: 1 / 3;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 2fr 4fr;
   text-align: left;
+  align-items: center;
 }
 
 .sidebar{
   display: grid;
   grid-row: 2 / 4;
+  gap: 50px;
 }
 
 .footer{
@@ -126,3 +130,10 @@ li{
   text-align: right;
 }
 
+.nav > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  align-items: center;
+
+}
