@@ -51,6 +51,7 @@
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
+
 }
 
 .article {
@@ -89,3 +90,39 @@
   font-size: 13px;
   font-weight: normal;  
 }
+
+
+
+li{
+  list-style-type: none;
+}
+.container{
+  display: grid;
+  gap: 4px;
+  height: 100vh;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 0.5fr 1fr 5fr 0.5fr;
+}
+
+.header{
+  display: grid;
+  grid-column: 1 / 3;
+  grid-template-columns: 1fr 4fr;
+  text-align: left;
+}
+
+.sidebar{
+  display: grid;
+  grid-row: 2 / 4;
+}
+
+.footer{
+  grid-column: 1 / 3;
+}
+
+.menu > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: right;
+}
+
