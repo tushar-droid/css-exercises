@@ -17,6 +17,7 @@ body, html {
   font-weight: bold;
   color: white;
   border-radius: 15px;
+
 }
 
 .header {
@@ -44,4 +45,25 @@ body, html {
 
 .footer {
   background-color: #393f4d;
+}
+
+
+.container{
+  display: grid;
+  gap:15px;
+  grid-template-rows: 120px 120px 480px 120px;
+  grid-template-columns: 300px 900px;
+}
+
+.header{
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.sidebar{
+  grid-area: 2 / 1 / 4 / 2 ;
+}
+
+.footer{
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
