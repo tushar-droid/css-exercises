@@ -17,3 +17,33 @@ button {
   padding: 16px 24px;
   text-align: center;
 }
+
+.zoomin{
+  animation: zoom-in 0.5s forwards;
+}
+.zoomout{
+  animation: zoom-out 0.5s backwards;
+}
+
+@keyframes zoom-in {
+  from{
+    font-size: 18px;
+    padding: 16px 24px;
+  }
+  to{
+    font-size: 20px;
+    padding: 18px 26px;
+  }
+}
+
+
+@keyframes zoom-out {
+  from{
+    font-size: 20px;
+    padding: 18px 26px;
+  }
+  to{
+    font-size: 18px;
+    padding: 16px 24px;
+  }
+}
